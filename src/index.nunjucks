@@ -1,0 +1,33 @@
+{% extends '_layouts/base.nunjucks' %}
+
+{% import "_modules/link/link.nunjucks" as link %}
+
+{% block content %}
+<div class="main-container">
+    <h1>Cat Clicker</h1>
+    <div class="sidebar">
+        <h2>Cat List</h2>
+        <ul class="cat-links">
+            <li>No cats have been added.</li>
+        </ul>
+    </div>
+    <div class="cats">
+        <p class="info">
+            The purpose of this page is to click on cute cats.
+            To the left, there is a list of cats from which to choose.
+            Begin by choosing a cat and clicking away!!
+        </p>
+        <div class="cat" id="cat">
+          <h2 class="cat-name"></h2>
+          <img src="" id="" class="cat-img" />
+          <div class="counter">
+              This cat has been clicked
+              <span class="cat-counter"></span>
+              times!!
+          </div>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <div class="footer"></div>
+</div>
+{% endblock %}

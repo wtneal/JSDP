@@ -1,0 +1,24 @@
+{
+  "name": "catclicker",
+  "description": "Udacity Javascript Design Patterns Project",
+  "main": "",
+  "authors": [
+    "Weston Neal <wtneal@asu.edu>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/wtneal/JSDP",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bourbon": "^4.2.7",
+    "neat": "^1.7.4",
+    "typeplate-starter-kit": "^3.0.1",
+    "font-awesome": "Font-Awesome#^4.6.1"
+  }
+}
