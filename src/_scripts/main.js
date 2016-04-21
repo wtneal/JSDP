@@ -5,6 +5,11 @@
 
 import $ from 'jquery';
 import Cat from './cat';
+const cats = [
+  new Cat('Jenny', 'cat1.jpg'),
+  new Cat('Joe', 'cat2.jpg'),
+  new Cat('Fluffy', 'cat3.jpg')
+];
 
 function setCount($cat, count) {
   $cat.find('.cat-counter').html(count);
@@ -34,15 +39,8 @@ function loadCats() {
 }
 
 $(() => {
-  console.log('Welcome to Yeogurt!');
-  let cats = [
-    new Cat('Jenny', 'cat1.jpg'),
-    new Cat('Joe', 'cat2.jpg'),
-    new Cat('Fluffy', 'cat3.jpg')
-  ];
-
   // build the sidebar list of cats
-  loadCats();
+  loadCats(cats);
 
   // add events to the sidebar links
   $('.sidebar a').click((ev) => {
