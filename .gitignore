@@ -6,11 +6,9 @@ build
 
 # Dependency directories
 node_modules
-gulp
 bower_components
 jspm_packages
 
 # Optional REPL history
 tmp
-gulp
 *.swp
